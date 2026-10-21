@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robot de Rescate - Copérnico 402</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #ffffff;
+            color: #222222;
+            margin: 0;
+            padding: 30px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 26px;
+            color: #000000;
+            margin-bottom: 25px;
+        }
+
+        .table-container {
+            width: 100%;
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            border: 1px solid #000000;
+            background-color: #ffffff;
+        }
+
+        th {
+            background-color: #d9d9d9;
+            color: #000000;
+            font-weight: bold;
+            text-align: center;
+            padding: 12px;
+            border: 1px solid #000000;
+            font-size: 15px;
+        }
+
+        td {
+            padding: 12px;
+            border: 1px solid #000000;
+            vertical-align: top;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        td:first-child {
+            width: 25%;
+            font-weight: bold;
+            background-color: #f2f2f2;
+            color: #000000;
+        }
+
+        tr:nth-child(even) td {
+            background-color: #fafafa;
+        }
+
+        tr:nth-child(even) td:first-child {
+            background-color: #eaeaea;
+        }
+
+        ul {
+            margin: 0;
+            padding-left: 22px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        li:last-child {
+            margin-bottom: 0;
+        }
+
+        li ul {
+            margin-top: 5px;
+            padding-left: 20px;
+        }
+
+        .component-img {
+            display: block;
+            max-width: 90px;
+            max-height: 90px;
+            margin: 8px 0;
+            padding: 3px;
+            border: 1px solid #777777;
+            background-color: #ffffff;
+        }
+
+        a {
+            color: #0000ee;
+            text-decoration: underline;
+        }
+
+        a:visited {
+            color: #551a8b;
+        }
+
+        a:hover {
+            color: #0000ff;
+        }
+
+        @media (max-width: 700px) {
+            body {
+                padding: 15px;
+            }
+
+            h1 {
+                font-size: 21px;
+            }
+
+            table {
+                font-size: 13px;
+            }
+
+            th,
+            td {
+                padding: 9px;
+            }
+
+            td:first-child {
+                width: 30%;
+            }
+
+            .component-img {
+                max-width: 70px;
+                max-height: 70px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Robot de Rescate - Copérnico 402</h1>
+
+        <div class="table-container">
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Aspecto</th>
+                        <th>Descripción</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>Propósito</td>
+                        <td>
+                            Crear un robot de rescate capaz de explorar y localizar
+                            a los miembros del equipo científico extraviados en un
+                            entorno hostil como la selva del planeta Copérnico-402.
+                            Este robot debe permitir la recopilación de datos vitales,
+                            la movilidad en terrenos difíciles y la señalización
+                            para rescate.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Temática</td>
+                        <td>
+                            Robótica aplicada a misiones de rescate en zonas de difícil
+                            acceso, utilizando sensores biomédicos, control de motores
+                            y comunicación para asegurar la localización y asistencia
+                            en situaciones de emergencia en entornos complejos.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Materiales y Piezas</td>
+                        <td>
+
+                            <ul>
+
+                                <li>
+                                    <strong>Dos mini protoboard:</strong>
+                                    <ul>
+                                        <li>
+                                            Para montar circuitos electrónicos de
+                                            forma práctica y modular.
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <strong>Tarjeta de desarrollo ESP32:</strong>
+
+                                    <img
+                                        src="https://tse1.mm.bing.net/th/id/OIP.N7RTyY7ipDoOydxhJcqZgAHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+                                        alt="ESP32"
+                                        class="component-img"
+                                    >
+
+                                    <ul>
+                                        <li>
+                                            Microcontrolador para control y
+                                            conectividad inalámbrica.
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <strong>Sensor MAX30102:</strong>
+
+                                    <img
+                                        src="https://tse4.mm.bing.net/th/id/OIP.DjCSgVXl5nGx0VGBuYVNNgHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+                                        alt="Sensor MAX30102"
+                                        class="component-img"
+                                    >
+
+                                    <ul>
+                                        <li>
+                                            Sensor biométrico para medir signos
+                                            vitales, como pulso y oxígeno.
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <strong>Cables para conexiones:</strong>
+                                    Para interconectar todos los componentes
+                                    electrónicos.
+                                </li>
+
+                                <li>
+                                    <strong>Portapilas para batería de 9V:</strong>
+                                    Fuente de energía portátil para alimentar
+                                    el circuito.
+                                </li>
+
+                                <li>
+                                    <strong>Módulo controlador L9110:</strong>
+
+                                    <img
+                                        src="https://inwfile.com/s-f/d877m7.png"
+                                        alt="Módulo L9110"
+                                        class="component-img"
+                                    >
+
+                                    <ul>
+                                        <li>
+                                            Maneja la dirección y velocidad de
+                                            los motores reductores.
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <strong>Seis jumpers macho-hembra:</strong>
+                                    Conexiones seguras entre el ESP32 y otros módulos.
+                                </li>
+
+                                <li>
+                                    <strong>Dos motorreductores amarillos:</strong>
+
+                                    <img
+                                        src="https://mvelectronica.s3.us-east-2.amazonaws.com/productos/MOT48A/6115a183bc3e0.webp"
+                                        alt="Motorreductor amarillo"
+                                        class="component-img"
+                                    >
+
+                                    <ul>
+                                        <li>
+                                            Motores con engranajes para el
+                                            movimiento del robot.
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <strong>Dos diodos LED:</strong>
+                                    Indicadores visuales para señales de estado
+                                    o alertas.
+                                </li>
+
+                                <li>
+                                    <strong>Dos resistencias de 220 Ω:</strong>
+                                    Limitan la corriente para proteger los LEDs.
+                                </li>
+
+                                <li>
+                                    <strong>Buzzer pasivo:</strong>
+                                    Emite sonidos de alerta para facilitar
+                                    la localización.
+                                </li>
+
+                                <li>
+                                    <strong>Kit acrílico de chasis para rover:</strong>
+                                    Soporte estructural que incluye ruedas,
+                                    tornillos, interruptor y rueda loca.
+                                </li>
+
+                            </ul>
+
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Videos Relacionados</td>
+                        <td>
+                            <a href="https://youtu.be/onkW2t1v__Q" target="_blank">
+                                Robots de rescate: ¿Cómo funcionan?
+                            </a>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
